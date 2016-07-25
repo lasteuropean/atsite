@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
@@ -27,7 +26,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['www.amitcm.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,8 +35,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'blog',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
@@ -70,7 +71,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'atsite.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
@@ -118,5 +118,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_URL = '/imagez/'
+STATIC_ROOT = '/home/public/imagez/'
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_ROOT, "static"),
+]
 
-STATIC_URL = '/static/'
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.static',
+)
