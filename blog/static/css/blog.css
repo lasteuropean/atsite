@@ -1,23 +1,79 @@
+/*CP Header Container*/
 .page-header {
-    background-color: #ff9400;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    background-image: url('../topdnc.jpg');
+    background-position: center;
+    background-size: cover;
+    position: static;
+    top: 0;
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
+    width: 100%;
+    z-index:-1;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
+    color: white;
+    font-size: 26pt;
     text-decoration: none;
 }
 
-.content {
-    margin-left: 40px;
+.content0{
+ margin: 30px 0px 0px 0px;
+ border: 1px solid #ccc;
+ padding: 10px;
+ width: 460px;
+ height: 400px;
+ float: left;
+ color: black;
+ background: white;
+ display: inline;
 }
 
-h1, h2, h3, h4 {
+.oldercontent {
+    position: relative;
+    float: left;
+    width: 40%;
+    background-color: blue;
+    z-index: 2;
+}
+
+.content {
+ margin: 60px 0px 0px 0px;
+ border: 1px solid black;
+ padding: 10px;
+
+ background: green;
+ float: left;
+}
+
+.oldcontent{
+   position: relative;
+   float: left;
+   width: 60%;
+   background-color: yellow;
+    z-index: 140;   
+}
+
+h1, h3 {
+    padding: 20px 20px 0px 0px;
     font-family: 'Papyrus', cursive;
 }
 
+h4 {
+    font-family: 'Papyrus', cursive;
+    color: yellow;
+}
+
+h2{
+    font-family: 'Arial';
+    color: black;
+    font-size: 14;
+}
+
+p{
+    font-family: 'Serif';
+}
 .date {
     color: #828282;
 }
@@ -42,6 +98,6 @@ h1, h2, h3, h4 {
 }
 
 .post h1 a, .post h1 a:visited {
-    color: #000000;
+    color: blue;
 }
 

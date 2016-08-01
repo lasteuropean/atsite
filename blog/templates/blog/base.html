@@ -6,16 +6,26 @@
     </head>
 <body>
     <div class="page-header">
-	<h1><a href="/">Traditional Chinese Medicine</a></h1>
-        <h2><a href="{% url 'post_new' %}"</a>Post New</h2>
+	<h1>Traditional Chinese Medicine</h1>
+	<h4>Ami Costa - Registered Acupuncturist</h4>
+        <h2><a href="{% url 'post_new' %}"</a> About</h2>
     </div>
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-8">
-            {% block content %}
-            {% endblock %}
-            </div>
+
+	<div class="content0">
+	      <h1> Welcome</h1>
+	      <h2> My name is Ami Costa and as a registered and licensed acupuncturist I am offering my 
+		expertise in Traditional Chinese Medicine to Edmonton and 
+		 the surrounding area. Please call to discuss your symptoms and to arrange 
+		an appointment. Refer here for an intake form or feel free to 
+		send an email!</h2>
         </div>
-    </div>
+
+	<div class="content">
+		<form action="#" method="get">
+		   <input type="text" value="Please Enter Details Here" name="textbox" size="90"</>
+		   <input type="submit" class="btn" value="Send" name="sndbtn"</>
+		</form>
+
+	</div>
 </body>
 </html>

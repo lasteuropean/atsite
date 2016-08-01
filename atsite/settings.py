@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'blog',
+    'rpg',
+    'main',
 ]
 
 SITE_ID = 1
@@ -127,4 +129,5 @@ STATICFILES_DIRS = [
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
+    'django.core.context_processors.request',
 )

@@ -1,0 +1,19 @@
+{% load static from staticfiles %}
+<html>
+    <head>
+        <title>Ami's Acupuncture</title>
+        <link href="{% static 'css/blog.css' %}" rel="stylesheet" type="text/css"/>
+    </head>
+<body>
+    <div class="page-header">
+	<img src="{% static "topdnc.jpeg" %} alt="My Image"/>
+	<h1><a href="/">Traditional Chinese Medicine</a></h1>
+    </div>
+    <div class="content container">
+        <div class="row">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>
